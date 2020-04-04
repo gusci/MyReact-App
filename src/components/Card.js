@@ -15,7 +15,7 @@ class Card extends React.Component {
     componentDidMount(){
         setTimeout(() =>{
             this.setState({
-                imagen: 'https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercise.png?alt=media&token=b9c4b236-16a9-4a56-bba2-90c9660a0f06'
+                imagen: 'https://scontent.fhmo2-1.fna.fbcdn.net/v/t1.0-9/48397596_200938590853375_7293512702410883072_n.jpg?_nc_cat=109&_nc_sid=110474&_nc_eui2=AeF9RU0TmopJVcJZrySGNeJfCigcrYeWdpUKKByth5Z2lV06e61dGw0mC0TSP4TebZk&_nc_oc=AQkqWmaJ5-WLVktR4IHYyT92VyhZnBtQtHym7Nfn-nCddl6QBBImQD4OZoCceIRdADuRX1FFifQdtG4wJ87CkAe8&_nc_ht=scontent.fhmo2-1.fna&oh=13217ac2dcb329f6beb1cf6179f92c29&oe=5EAE2F03'
             })
         }, 5000)
     }
@@ -23,7 +23,7 @@ class Card extends React.Component {
     render(){
         const { title, description, img, leftColor, rightColor } = this.props
         return (
-            <div className="card mx-auto Fitness-Card"
+            <div className="card mx-auto Fitness-Card "
                 style={{
                     backgroundImage: `url(${circlesImg}), linear-gradient(to right, ${leftColor}, ${rightColor})`
                 }}
