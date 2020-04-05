@@ -1,11 +1,7 @@
 .card {
+    margin-top: 20px;
     border: none;
     border-radius: 8px;
-}
-.Fitness-User-Info {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 200px;
 }
 .Fitness-Card {
     max-height: 160px;
