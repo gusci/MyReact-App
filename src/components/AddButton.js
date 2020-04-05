@@ -1,14 +1,12 @@
 import React from 'react'
 import './styles/Card.css'
 import buttomImg from '../images/add.png'
+import { Link } from 'react-router-dom'
 
-function AddButton(props){
-    return (
-        <a href="/exercise/new">
-            <img src={buttomImg} class="Fitness-Add" />
-        </a>
+const AddButtonn = () =>(
+    <Link to="/memories/new">
+        <img src={buttomImg} className="Fitness-Add" />
+    </Link>
+)
 
-    )
-}
-
-export default AddButton
+export default AddButtonn

@@ -1,12 +1,10 @@
 import React from 'react'
 import MemoriesList from '../components/MemoriesList'
 import Welcome from '../components/Welcome';
-import AddButton from '../components/AddButton';
+import AddButtonn from '../components/AddButton';
 
 class Memories extends React.Component{
-    constructor(props){
-        super(props)
-        this.state = {
+    state = {
             data : [{
                 "id": 1,
                 "title": "My memories at Metal & Rock Events",
@@ -31,7 +29,6 @@ class Memories extends React.Component{
             }]
             
         }
-    }
 
     render(){
         return(
@@ -42,7 +39,7 @@ class Memories extends React.Component{
                 <MemoriesList 
                     memories = {this.state.data}
                 />
-                <AddButton />
+                <AddButtonn />
             </div>
         )
     }
