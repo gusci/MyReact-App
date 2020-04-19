@@ -10,5 +10,4 @@ const Welcome = ({username}) => (
     </div>
 )
 
-
 export default Welcome

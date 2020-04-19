@@ -3,8 +3,8 @@ import Card from './Card'
 
 const MemoriesList = ({memories}) => (
     <div>
-        { memories.map((memorie) => {
-            return(
+        { memories.map((memorie) => (
+          
                 <Card
                     key={memorie.id}
                     title={memorie.title}
@@ -13,8 +13,7 @@ const MemoriesList = ({memories}) => (
                     leftColor={memorie.leftColor}
                     rightColor={memorie.rightColor}
                 />
-            )
-        })}
+        ))}
     </div>
 )
 
