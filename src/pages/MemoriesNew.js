@@ -14,7 +14,8 @@ class MemoriesNew extends React.Component{
             rightColor: ''
         }
     }
-
+   
+    
     handleChange = e => {
         this.setState({
             form: {
@@ -22,6 +23,27 @@ class MemoriesNew extends React.Component{
                 [e.target.name]: e.target.value
             }
         })
+    }
+
+    handleSubmit = async e => {
+        e.preventDefault()
+        try {
+            let datas = {
+                method:'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(this.state.form)
+            }
+            let res = await fetch('http://localhost:8000/api/exercises',datas)
+            let Json = await res.json()
+            console.log(Json)
+        } catch (error) {
+            
+        }
+        
+        console.log(this.state)
     }
 
     render(){
@@ -33,6 +55,7 @@ class MemoriesNew extends React.Component{
                 <div className="col-sm">
                     <MemoriesForm
                         onChange={this.handleChange}
+                        onSubmit={this.handleSubmit}
                         form={this.state.form}
                     />            
                 </div>

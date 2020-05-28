@@ -2,18 +2,15 @@ import React from 'react'
 
 class MemoriesForm extends React.Component {
 
-    handleSubmit = e => {
-        e.preventDefault()
-        console.log(this.state)
-    }
+    
 
     render(){
-        const { onChange, form } = this.props
+        const { onChange,onSubmit,form } = this.props
 
         return (
             <div className="container">
             <form 
-                onSubmit={this.handleSubmit}
+                onSubmit={onSubmit}
             >
                 <div className="form-group">
                     <input 
@@ -70,7 +67,7 @@ class MemoriesForm extends React.Component {
                 
                 <button 
                     type="submit" 
-                    className="btn btn-primary"
+                    className="btn btn-primary float-right"
                 >
                     Submit
                 </button>
