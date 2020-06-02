@@ -2,19 +2,15 @@ import React from 'react'
 import Card from './Card'
 
 const MemoriesList = ({memories}) => (
-    <div>
+    <React.Fragment>
         { memories.map((memorie) => (
           
                 <Card
                     key={memorie.id}
-                    title={memorie.title}
-                    description={memorie.description}
-                    img={memorie.img}
-                    leftColor={memorie.leftColor}
-                    rightColor={memorie.rightColor}
+                    {...memorie}
                 />
         ))}
-    </div>
+    </React.Fragment>
 )
 
 

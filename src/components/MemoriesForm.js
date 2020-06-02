@@ -1,14 +1,8 @@
 import React from 'react'
 
-class MemoriesForm extends React.Component {
+const MemoriesForm = ({ onChange,onSubmit,form }) =>(
 
-    
-
-    render(){
-        const { onChange,onSubmit,form } = this.props
-
-        return (
-            <div className="container">
+        <div className="container">
             <form 
                 onSubmit={onSubmit}
             >
@@ -73,8 +67,6 @@ class MemoriesForm extends React.Component {
                 </button>
             </form>
         </div>
-        )
-    }
-}
+)
 
 export default MemoriesForm

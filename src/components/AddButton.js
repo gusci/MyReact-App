@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const AddButtonn = () =>(
     <Link to="/memories/new">
-        <img src={buttomImg} className="Fitness-Add" />
+        <img src={buttomImg} className="Fitness-Add" alt="BtnPlus" />
     </Link>
 )
 
